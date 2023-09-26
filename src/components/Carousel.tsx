@@ -22,7 +22,7 @@ const Carousel = ({ slides }: { slides: string[] }) => {
               id={`image-${index}`}
               key={index}
               src={item}
-              className={`w-full h-full min-w-full object-cover object-center transition-all duration-500`}
+              className={`w-full h-full min-w-full object-cover object-center transition-transform ease-out duration-500`}
               style={{ transform: `translateX(${-currentSlideIndex * 100}%)` }}
             />
           ))}
