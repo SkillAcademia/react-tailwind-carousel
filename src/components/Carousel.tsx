@@ -41,7 +41,7 @@ const Carousel = ({ slides }: { slides: string[] }) => {
           <div
             onClick={() => setCurrentSlideIndex(index)}
             className={`h-4 w-4 rounded-full transition-colors duration-200 cursor-pointer ${
-              currentSlideIndex === index ? "bg-white" : "bg-black/50"
+              currentSlideIndex === index ? "bg-white" : "bg-black/60"
             }`}
           />
         ))}
