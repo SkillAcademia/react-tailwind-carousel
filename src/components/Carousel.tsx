@@ -19,7 +19,7 @@ const Carousel = ({ slides }: { slides: string[] }) => {
         <div className="w-full h-full inline-flex overflow-hidden rounded-lg">
           {slides.map((item, index) => (
             <img
-              key={index}
+              key={"image" + index}
               src={item}
               className={`w-full h-full min-w-full object-cover object-center transition-transform ease-out duration-500`}
               style={{ transform: `translateX(${-currentSlideIndex * 100}%)` }}
@@ -37,6 +37,7 @@ const Carousel = ({ slides }: { slides: string[] }) => {
       <div className="mt-6 flex items-center gap-4">
         {slides.map((_, index) => (
           <div
+            key={"dot-" + index}
             onClick={() => setCurrentSlideIndex(index)}
             className={`h-4 w-4 rounded-full transition-colors duration-200 cursor-pointer ${
               currentSlideIndex === index ? "bg-white" : "bg-black/60"
