@@ -11,7 +11,7 @@ const slides = [Img1, Img2, Img3, Img4];
 
 function App() {
   return (
-    <div className="w-full min-h-screen flex flex-col items-center justify-center">
+    <div className="w-full min-h-screen flex flex-col items-center justify-center px-4">
       <Carousel slides={slides} />
     </div>
   );
