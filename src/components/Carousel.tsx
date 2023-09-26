@@ -15,11 +15,10 @@ const Carousel = ({ slides }: { slides: string[] }) => {
 
   return (
     <>
-      <div className="group relative w-full max-w-7xl aspect-video flex flex-col items-center justify-center overflow-hidden">
+      <div className="group relative w-full max-w-7xl aspect-video flex flex-col items-center justify-center">
         <div className="w-full h-full inline-flex overflow-hidden rounded-lg">
           {slides.map((item, index) => (
             <img
-              id={`image-${index}`}
               key={index}
               src={item}
               className={`w-full h-full min-w-full object-cover object-center transition-transform ease-out duration-500`}
